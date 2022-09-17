@@ -7,11 +7,12 @@
     <title>Home</title>
 </head>
 <body>
-    <h2>Recipes</h2>
+    <h2>Receitas</h2>
     <ul>
     {%for receita  in receitas%}
-        <li>{{ receita }} - {{ receita.datatime }}</li>
+        <li>{{ receita }} - {{ receita.datatime }}</li> 
     {% endfor %}
     </ul>
+    <a href="{% url 'create' %}"><button>Criar</button></a>
 </body>
 </html>

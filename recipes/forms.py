@@ -7,3 +7,4 @@ class Recipesnewpost(ModelForm):
     class Meta:
         model = RecipesPost
         fields = ['titulo', 'datatime', 'ingrediente', 'mododepreparo']
+        
