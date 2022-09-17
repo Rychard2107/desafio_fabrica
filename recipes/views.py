@@ -1,3 +1,7 @@
 from django.shortcuts import render
+from .models import RecipesPost
 
-# Create your views here.
+def home(request):
+    data = {}
+    data['receitas'] = RecipesPost.objects.all()
+    return render(request, 'recipes/home.html', data)
