@@ -10,7 +10,7 @@
     <h2>Receitas</h2>
     <ul>
     {%for receita  in receitas%}
-        <li>{{ receita }} - {{ receita.datatime }}</li> 
+        <li><a href="{% url 'update' receita.id%}">{{ receita }} - {{ receita.datatime }}</a></li> 
     {% endfor %}
     </ul>
     <a href="{% url 'create' %}"><button>Criar</button></a>

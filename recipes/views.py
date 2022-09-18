@@ -30,7 +30,7 @@ def update(request, pk):
         form.save()
         return redirect('home')
     
-    return render(request, 'blog/create.html', data)
+    return render(request, 'recipes/create.html', data)
 
 
 def delete(request, pk):

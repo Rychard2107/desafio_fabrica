@@ -13,8 +13,9 @@
         {{ form.as_p }}
 
         <button type="submit">Salvar</button>
-        <a href="{% url 'delete'%}"><button type="submit">Deletar</button></a>
-
+        {% if objeto %}
+            <a href="{% url 'delete' objeto.id%}"><button type="submit">Deletar</button></a>
+        {% endif %}
     </form>
 </body>
 </html>
